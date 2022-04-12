@@ -39,7 +39,7 @@ export const taskSlice = createSlice({
 export const { newTask, completeTask, deleteTask } = taskSlice.actions;
 
 // ⑤ 現在のstateの値を取得する関数をexportして、外部ファイルから呼び出せるようにする
-export const selectTasks = (state) => state.task.takss;
+export const selectTasks = (state) => state.task.tasks;
 
 // ⑥ exportしたcounterSliceを src/app/store.js でimportする　※stoer.jsのファイル内でconfigureStore関数を使って他で定義したsliceを集約している
 export default taskSlice.reducer;
