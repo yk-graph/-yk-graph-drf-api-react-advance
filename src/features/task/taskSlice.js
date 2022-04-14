@@ -110,6 +110,6 @@ const taskSlice = createSlice({
 export const { editTask, selectTask } = taskSlice.actions
 export const selectTasks = (state) => state.task.tasks
 export const selectSelectedTask = (state) => state.task.selectedTask
-export const selectEditTask = (state) => state.task.editedTask
+export const selectEditedTask = (state) => state.task.editedTask
 
 export default taskSlice.reducer
