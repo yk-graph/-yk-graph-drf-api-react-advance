@@ -1,5 +1,6 @@
 import React from 'react'
 
+import TaskList from './features/task/TaskList'
 import styles from './App.module.css'
 import { FaSignOutAlt } from 'react-icons/fa'
 
@@ -15,6 +16,7 @@ const App = () => {
         <button onClick={logout} className={styles.signBtn}>
           <FaSignOutAlt />
         </button>
+        <TaskList />
       </div>
       <div className={styles.appDetails}></div>
     </div>
