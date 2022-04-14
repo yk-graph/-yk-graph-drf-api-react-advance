@@ -16,7 +16,7 @@ const TaskList = () => {
       await dispatch(fetchAsyncProfile())
     }
     fetchInitData()
-  }, [])
+  }, [dispatch])
 
   return (
     <ul className={styles.taskList}>

@@ -1,6 +1,7 @@
 import React from 'react'
 
 import TaskList from './features/task/TaskList'
+import TaskDetails from './features/task/TaskDetails'
 import styles from './App.module.css'
 import { FaSignOutAlt } from 'react-icons/fa'
 
@@ -18,7 +19,9 @@ const App = () => {
         </button>
         <TaskList />
       </div>
-      <div className={styles.appDetails}></div>
+      <div className={styles.appDetails}>
+        <TaskDetails />
+      </div>
     </div>
   )
 }
