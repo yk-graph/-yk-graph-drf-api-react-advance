@@ -3,6 +3,7 @@ import React from 'react'
 import TaskList from './features/task/TaskList'
 import TaskDetails from './features/task/TaskDetails'
 import TaskInput from './features/task/TaskInput'
+import Header from './features/login/Header'
 import { FaSignOutAlt } from 'react-icons/fa'
 import styles from './App.module.css'
 
@@ -18,6 +19,7 @@ const App = () => {
         <button onClick={logout} className={styles.signBtn}>
           <FaSignOutAlt />
         </button>
+        <Header />
         <TaskInput />
         <TaskList />
       </div>
