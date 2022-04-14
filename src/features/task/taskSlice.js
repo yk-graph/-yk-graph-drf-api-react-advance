@@ -100,7 +100,7 @@ const taskSlice = createSlice({
     builder.addCase(fetchAsyncDelete.fulfilled, (state, action) => {
       return {
         ...state,
-        tasks: state.tasks.filter((task) => task.id !== action.id),
+        tasks: state.tasks.filter((task) => task.id !== action.payload),
         selectedTask: { id: 0, title: '', created_at: '', updated_at: '' },
       }
     })
